@@ -1,4 +1,4 @@
-#include "test.h"
+#include "consistency.h"
 
 void check(string x) {
 	stack<string>s;
@@ -80,6 +80,40 @@ void check(string x) {
 	
 
 }
+
+//read
+vector<string> read(string path) {
+
+	vector<string> lines;
+	string line;
+
+	try {
+		ifstream y(path); //read file
+
+		if (y.is_open()) {
+
+			while (getline(y, line)) {
+				lines.push_back(line);
+			}
+			y.close();
+
+		}
+		else {
+			cout << "The path is not correct";
+		}
+
+	}
+	catch (exception& e) {
+		cout << e.what() << endl;
+	}
+
+
+	return lines;
+
+}
+
+
+
 string unformattingInOneLine(string path) {
 
 	ifstream in(path);
