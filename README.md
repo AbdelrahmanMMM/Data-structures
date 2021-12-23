@@ -1,5 +1,5 @@
 # Data Structure
-This is an xml editor 
+This is an XML Editor 
 ## The Application Does :
 1- Check for XML file errors
 
