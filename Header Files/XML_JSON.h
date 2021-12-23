@@ -6,12 +6,12 @@
 #include <string>
 #include <stack>
 #include <fstream>
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 #include <stdlib.h>
 using namespace std;
 string fitting(string in);
 string spacescount(int);
 
-void XMLJSON(string );
+void XMLJSON(string);
 
 #endif /* XML_JSON_H_ */
